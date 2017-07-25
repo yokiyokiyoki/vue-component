@@ -9,6 +9,7 @@
 </template>
 <script>
   import '@/assets/less/cascader.less'
+  import dom from '@/utils/dom'
   export default {
     name: 'Caspanel',
     data() {
@@ -16,6 +17,12 @@
 
       }
     },
+    methods: {
+
+    },
+    watch: {
+
+    }
   }
 
 </script>

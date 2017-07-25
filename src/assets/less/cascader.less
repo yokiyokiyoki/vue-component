@@ -1,20 +1,22 @@
 .cascader {
   .select-text {
-    min-width: 120px;
-    min-height: 30px;
-    max-width: 150px;
-    max-height: 50px;
+    width: 120px;
+    height: 30px;
     border: 1px solid black;
     cursor: pointer;
+    i {
+      transition: all .5s;
+      &.is-reverse {
+        transform: rotate(180deg)
+      }
+    }
   }
   .caspanel {
     margin-top: 5px;
-    min-width: 120px;
-    min-height: 30px;
-    max-width: 150px;
-    max-height: 50px;
     border: 1px solid black;
+    height: 30px;
+    width: 120px;
     cursor: pointer;
-    transition: all 2s;
+    transition: all 1s;
   }
 }

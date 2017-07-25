@@ -65,7 +65,7 @@ export const addClass = function (el, className) {
       }
     }
   }
-  if (!classList) {
+  if (!el.classList) {
     el.className += ' ' + curClass
   }
 }
@@ -85,7 +85,15 @@ export const removeClass = function (el, className) {
       }
     }
   }
-  if (!classList) {
+  if (!el.classList) {
     el.className = trim(curClass)
   }
+}
+
+export default {
+  on,
+  off,
+  once,
+  addClass,
+  removeClass
 }

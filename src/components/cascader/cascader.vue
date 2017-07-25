@@ -1,14 +1,16 @@
 <template>
-  <div class="cascader a">
+  <div class="cascader">
     <div class="select-text" @click="changePanel">
       <span class="name">{{selectText}}</span>
+      <i class="el-icon-arrow-down"></i>
     </div>
-    <Caspanel v-show="show"></Caspanel>
+    <Caspanel v-if='show'></Caspanel>
   </div>
 </template>
 <script>
   import '@/assets/less/cascader.less'
   import Caspanel from './caspanel'
+  import dom from '@/utils/dom'
   export default {
     name: 'Cascader',
     data() {
@@ -31,13 +33,23 @@
         vm.show = false
       }
     },
+    watch: {
+      show(val) {
+        let i = document.getElementsByClassName('el-icon-arrow-down')[0]
+        if (val) {
+          dom.addClass(i, 'is-reverse')
+        } else {
+          dom.removeClass(i, 'is-reverse')
+        }
+      }
+    },
     mounted() {
       let vm = this
-      document.addEventListener('click', vm.hidePanel)
+      dom.on(document, 'click', vm.hidePanel)
     },
     beforeDestroy() {
       let vm = this
-      document.removeEventListener('click', vm.hidePanel)
+      dom.off(document, 'click', vm.hidePanel)
     }
   }
 
