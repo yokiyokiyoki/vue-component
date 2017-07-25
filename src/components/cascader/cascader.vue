@@ -1,5 +1,5 @@
 <template>
-  <div class="cascader">
+  <div class="cascader a">
     <div class="select-text" @click="changePanel">
       <span class="name">{{selectText}}</span>
     </div>
