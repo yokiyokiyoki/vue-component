@@ -1,20 +1,21 @@
 <template>
-    <div class="caspanel">
-        <ul>
-            <li class="caspanel-parent">
-                <span class="name"></span>
-            </li>
-        </ul>
-    </div>
+  <div class="caspanel">
+    <ul>
+      <li class="caspanel-parent">
+        <span class="name"></span>
+      </li>
+    </ul>
+  </div>
 </template>
 <script>
-import '@/assets/less/cascader.less'
-export default {
+  import '@/assets/less/cascader.less'
+  export default {
     name: 'Caspanel',
     data() {
-        return {
+      return {
 
-        }
+      }
     },
-}
+  }
+
 </script>
