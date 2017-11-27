@@ -10,17 +10,17 @@
       };
     },
     mounted() {
-      this.bus.emit("yoki", "data");
-      this.bus.on("yoki", function(data) {
+      this.bus.$emit("yoki", "data");
+      this.bus.$on("yoki", function(data) {
         console.log("yoki", data);
       });
-      this.bus.on("yoki", function() {
+      this.bus.$on("yoki", function() {
         console.log("111");
       });
       console.log(this.bus);
     },
     beforeDestroy() {
-      this.bus.off("yoki");
+      this.bus.$off("yoki");
       console.log(this.bus);
     }
   };
