@@ -12,7 +12,7 @@ pubsub.prototype.on = function (eventType, handler) {
 }
 pubsub.prototype.emit = function (eventType) {
   let sub = this
-  let handlerArg = Array.prototype.slice.call(arguments, 1)
+  let handlerArg = [...arguments]
   sub.handlers[eventType].forEach(function (item, index) {
     item.apply(null, handlerArg)
   });
