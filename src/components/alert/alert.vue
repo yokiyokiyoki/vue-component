@@ -10,21 +10,24 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      .alert {
+      .alert-box {
         background-color: #fff;
         height: 100px;
         width: 100px;
       }
     }
 
-
 </style>
 
 <template>
   <div class="alert-wrapper">
       <div class="alert-box">
-          <div class="header"></div>
-          <div class="content"></div>
+          <div class="header" @click="open">
+              open
+          </div>
+          <div class="content" @click="close">
+              close
+          </div>
           <div class="footer"></div>
       </div>
   </div>
@@ -32,11 +35,29 @@
 <script>
     import dom from "@/utils/dom";
     export default {
+      data() {
+        return {
+          modal: null
+        };
+      },
       mounted() {
-        let modal = document.createElement("div");
         let body = document.querySelector("body");
-        modal.className = "modal";
-        body.appendChild(modal);
+        this.modal = document.createElement("div");
+        this.modal.className = "modal";
+        body.appendChild(this.modal);
+      },
+      methods: {
+        close() {
+          let body = document.querySelector("body");
+          body.removeChild(this.modal);
+        },
+        open() {
+          let body = document.querySelector("body");
+          body.appendChild(this.modal);
+        }
+      },
+      beforeDestroy() {
+        this.modal = null;
       }
     };
 </script>
