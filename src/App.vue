@@ -8,9 +8,6 @@
         <li>
           <router-link to='/cascader'>级联选择器</router-link>
         </li>
-        <li>
-          <router-link to='/lazyLoad'>加载</router-link>
-        </li>
       </ul>
     </nav>
     <router-view></router-view>
@@ -18,21 +15,19 @@
 </template>
 
 <script>
-  import '@/assets/less/body.less'
+  import "@/assets/less/body.less";
   export default {
-    name: 'app'
-  }
-
+    name: "app"
+  };
 </script>
 
 <style scope lang="less">
   #container {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
   }
-
 </style>

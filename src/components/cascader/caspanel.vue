@@ -8,21 +8,14 @@
   </div>
 </template>
 <script>
-  import '@/assets/less/cascader.less'
-  import dom from '@/utils/dom'
+  import "@/assets/less/cascader.less";
+  import dom from "@/utils/dom";
   export default {
-    name: 'Caspanel',
+    name: "Caspanel",
     data() {
-      return {
-
-      }
+      return {};
     },
-    methods: {
-
-    },
-    watch: {
-
-    }
-  }
-
+    methods: {},
+    watch: {}
+  };
 </script>

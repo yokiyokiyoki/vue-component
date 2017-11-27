@@ -1,4 +1,4 @@
-//自己写的订阅/发布
+//自己写的订阅/发布模式
 let pubsub = function () {
   this.handlers = {}
 }
@@ -12,10 +12,7 @@ pubsub.prototype.on = function (eventType, handler) {
 }
 pubsub.prototype.emit = function (eventType) {
   let sub = this
-  //   sub.handlers[eventType]()
-  if (!sub.handlers[eventType]) throw new Error('没有发布该事件，无法订阅')
   let handlerArg = Array.prototype.slice.call(arguments, 1)
-  console.log(arguments)
   sub.handlers[eventType].forEach(function (item, index) {
     item.apply(null, handlerArg)
   });
