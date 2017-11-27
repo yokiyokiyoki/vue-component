@@ -13,8 +13,11 @@ pubsub.prototype.on = function (eventType, handler) {
 pubsub.prototype.emit = function (eventType) {
   let sub = this
   let handlerArg = [...arguments]
-  sub.handlers[eventType].forEach(function (item, index) {
-    item.apply(null, handlerArg)
+  if (!(eventType in sub.handlers)) { //如果实例里面没有这个类型,先把这个类型声明为数组
+    sub.handlers[eventType] = []
+  }
+  sub.handlers[eventType].length && sub.handlers[eventType].forEach((fn) => {
+    fn.apply(null, handlerArg)
   });
   return sub //返回该实例，可以链式调用
 }
