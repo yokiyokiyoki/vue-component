@@ -1,6 +1,6 @@
-# vue-component
+# vue-study
 
-> 基于vue的组件
+> 关于vue的学习
 
 - 包括一些实用小方法
 
