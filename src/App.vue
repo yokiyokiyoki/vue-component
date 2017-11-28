@@ -1,13 +1,15 @@
 <template>
   <div id="container">
-    <nav>
+    <nav class="aside">
       <ul>
         <li>
           <router-link to='/'>首页</router-link>
         </li>
       </ul>
     </nav>
-    <router-view></router-view>
+    <div class="main">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
