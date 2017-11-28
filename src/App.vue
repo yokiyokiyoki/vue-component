@@ -5,6 +5,9 @@
         <li>
           <router-link to='/'>首页</router-link>
         </li>
+        <li>
+          <router-link to='/know'>认识vue</router-link>
+        </li>
       </ul>
     </nav>
     <div class="main">
@@ -40,8 +43,9 @@
       left: 0px;
       right: 0px;
       bottom: 0px;
-      padding-left: 220px;
+      padding-left: 230px;
       background-color: white;
+      padding-top: 10px;
     }
   }
 

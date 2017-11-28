@@ -1,9 +1,4 @@
-<style lang="less" scoped>
-  .index {
-    padding: 10px 10px;
-  }
 
-</style>
 
 <template>
   <div class="index">
