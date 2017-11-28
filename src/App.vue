@@ -8,6 +8,9 @@
         <li>
           <router-link to='/know'>认识vue</router-link>
         </li>
+        <li>
+          <router-link to='/instance'>组件实例</router-link>
+        </li>
       </ul>
     </nav>
     <div class="main">
