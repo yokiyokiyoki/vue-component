@@ -1,8 +1,12 @@
 <template>
   <div class="know">
-      <!-- 输出的是字符串 -->
-      <div>输出的是字符串：{{rawHtml}}</div>
-        <div>用v-html指令：<span v-html="rawHtml"></span></div>
+        <div>1.输出的是字符串：{{rawHtml}}</div>
+        <div>2.用v-html指令：<span v-html="rawHtml"></span></div>
+        <div>3.{{name}}</div>
+        <div>
+            4.v-model可以双向绑定
+            <input type="text" v-model="name">
+        </div>
   </div>
 </template>
 <script>
