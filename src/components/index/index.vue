@@ -1,19 +1,21 @@
+<style lang="less" scoped>
+  .index {
+    padding: 10px 10px;
+  }
+
+</style>
+
 <template>
   <div class="index">
-    <div>index</div>
+    <span>关于vue的一些知识点</span>
   </div>
 </template>
 <script>
   export default {
-    name: 'Index',
+    name: "Index",
     data() {
-      return {
-
-      }
+      return {};
     },
-    methods: {
-
-    }
-  }
-
+    methods: {}
+  };
 </script>
