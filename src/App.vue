@@ -14,6 +14,9 @@
         <li>
           <router-link to='/computed'>computed属性</router-link>
         </li>
+        <li>
+          <router-link to='/showAndIf'>show和if</router-link>
+        </li>
       </ul>
     </nav>
     <div class="main">

@@ -5,6 +5,7 @@ import Index from '@/components/index'
 import Know from '@/components/know'
 import Instance from '@/components/instance'
 import Computed from '@/components/computed'
+import ShowAndIf from '@/components/showAndIf'
 
 Vue.use(Router)
 
@@ -25,5 +26,9 @@ export default new Router({
     path: '/computed',
     name: 'Computed',
     component: Computed,
+  }, {
+    path: '/showAndIf',
+    name: 'ShowAndIf',
+    component: ShowAndIf,
   }]
 })
