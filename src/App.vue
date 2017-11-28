@@ -5,9 +5,6 @@
         <li>
           <router-link to='/'>首页</router-link>
         </li>
-        <li>
-          <router-link to='/cascader'>级联选择器</router-link>
-        </li>
       </ul>
     </nav>
     <router-view></router-view>
@@ -30,4 +27,5 @@
     color: #2c3e50;
     margin-top: 60px;
   }
+
 </style>
