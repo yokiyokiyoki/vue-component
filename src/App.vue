@@ -25,9 +25,24 @@
     font-family: "Avenir", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+    .aside {
+      position: fixed;
+      top: 0px;
+      width: 220px;
+      bottom: 0px;
+      left: 0px;
+      border-right: 1px solid #4fc08d;
+      z-index: 10;
+    }
+    .main {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      padding-left: 220px;
+      background-color: white;
+    }
   }
 
 </style>
