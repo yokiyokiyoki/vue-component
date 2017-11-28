@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import Index from '@/components/index'
 import Know from '@/components/know'
 import Instance from '@/components/instance'
+import Computed from '@/components/computed'
 
 Vue.use(Router)
 
@@ -20,5 +21,9 @@ export default new Router({
     path: '/instance',
     name: 'Instance',
     component: Instance,
+  }, {
+    path: '/computed',
+    name: 'Computed',
+    component: Computed,
   }]
 })
