@@ -17,6 +17,9 @@
         <li>
           <router-link to='/showAndIf'>show和if</router-link>
         </li>
+        <li>
+          <router-link to='/forTemplate'>for循环数据</router-link>
+        </li>
       </ul>
     </nav>
     <div class="main">

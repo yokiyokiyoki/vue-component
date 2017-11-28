@@ -6,6 +6,7 @@ import Know from '@/components/know'
 import Instance from '@/components/instance'
 import Computed from '@/components/computed'
 import ShowAndIf from '@/components/showAndIf'
+import ForTemplate from '@/components/for'
 
 Vue.use(Router)
 
@@ -30,5 +31,9 @@ export default new Router({
     path: '/showAndIf',
     name: 'ShowAndIf',
     component: ShowAndIf,
+  }, {
+    path: '/forTemplate',
+    name: 'ForTemplate',
+    component: ForTemplate
   }]
 })
