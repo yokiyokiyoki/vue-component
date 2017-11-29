@@ -7,6 +7,7 @@ import Instance from '@/components/instance'
 import Computed from '@/components/computed'
 import ShowAndIf from '@/components/showAndIf'
 import ForTemplate from '@/components/for'
+import Bind from '@/components/bind'
 
 Vue.use(Router)
 
@@ -35,5 +36,9 @@ export default new Router({
     path: '/forTemplate',
     name: 'ForTemplate',
     component: ForTemplate
+  }, {
+    path: '/bind',
+    name: 'Bind',
+    component: Bind
   }]
 })

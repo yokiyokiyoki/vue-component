@@ -20,6 +20,9 @@
         <li>
           <router-link to='/forTemplate'>for循环数据</router-link>
         </li>
+        <li>
+          <router-link to='/bind'>dom元素上动态绑定元素和监听事件</router-link>
+        </li>
       </ul>
     </nav>
     <div class="main">
@@ -60,5 +63,4 @@
       padding-top: 10px;
     }
   }
-
 </style>
