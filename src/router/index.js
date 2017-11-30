@@ -8,6 +8,8 @@ import Computed from '@/components/computed'
 import ShowAndIf from '@/components/showAndIf'
 import ForTemplate from '@/components/for'
 import Bind from '@/components/bind'
+import Modifier from '@/components/modifier'
+
 
 Vue.use(Router)
 
@@ -40,5 +42,9 @@ export default new Router({
     path: '/bind',
     name: 'Bind',
     component: Bind
+  }, {
+    path: '/modifier',
+    name: 'Modifier',
+    component: Modifier
   }]
 })
