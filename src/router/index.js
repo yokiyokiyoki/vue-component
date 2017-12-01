@@ -9,7 +9,7 @@ import ShowAndIf from '@/components/showAndIf'
 import ForTemplate from '@/components/for'
 import Bind from '@/components/bind'
 import Modifier from '@/components/modifier'
-
+import KeyCode from '@/components/keyCode'
 
 Vue.use(Router)
 
@@ -46,5 +46,9 @@ export default new Router({
     path: '/modifier',
     name: 'Modifier',
     component: Modifier
+  }, {
+    path: '/keyCode',
+    name: 'KeyCode',
+    component: KeyCode
   }]
 })

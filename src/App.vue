@@ -26,6 +26,9 @@
         <li>
           <router-link to='/modifier'>事件修饰符</router-link>
         </li>
+        <li>
+          <router-link to='/keyCode'>按键修饰符</router-link>
+        </li>
       </ul>
     </nav>
     <div class="main">
