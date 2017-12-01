@@ -11,6 +11,7 @@
       </div>
     </div>
     <div @click.prevent="preventClick">阻止默认行为，比如提交submit</div>
+    <div @click.prevent.stop="preventClick">阻止默认行为和阻止冒泡，可以串联</div>
   </div>
 </template>
 <script>
