@@ -12,6 +12,14 @@
     </div>
     <div @click.prevent="preventClick">阻止默认行为，比如提交submit</div>
     <div @click.prevent.stop="preventClick">阻止默认行为和阻止冒泡，可以串联</div>
+    <!-- 点它本身才会触发父亲节点本身，如果没有这个self的话，那么点击儿子节点，父亲节点本身会出现 -->
+    <div class="father" @click.self="fatherClick">
+      父亲节点本身
+      <div class="son" @click="sonClick">
+        儿子节点本身
+      </div>
+    </div>
+    <div v-on:click.once="doThis">我只会触发一次，也可以用于自定义组件（其他修饰符只能用于原生dom事件）</div>
   </div>
 </template>
 <script>
@@ -32,6 +40,9 @@
       },
       preventClick() {
         console.log("阻止默认行为");
+      },
+      doThis() {
+        console.log('我只会触发一次')
       }
     }
   };
