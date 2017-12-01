@@ -19,7 +19,14 @@
         儿子节点本身
       </div>
     </div>
-    <div v-on:click.once="doThis">我只会触发一次，也可以用于自定义组件（其他修饰符只能用于原生dom事件）</div>
+    <div v-on:click.once="doThis">我只会触发一次，也可以用于自定义组件（其他修饰符只能用于原生dom事件</div>
+    <!-- 开启捕获模式，没有捕获的话默认点击son，出来的是儿子，父亲，现在则是父亲，儿子 -->
+    <div class="father" @click.capture="fatherClick">
+      父亲节点本身
+      <div class="son" @click="sonClick">
+        儿子节点本身
+      </div>
+    </div>
   </div>
 </template>
 <script>
