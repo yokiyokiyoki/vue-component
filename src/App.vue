@@ -29,6 +29,9 @@
         <li>
           <router-link to='/keyCode'>按键修饰符</router-link>
         </li>
+        <li>
+          <router-link to='/class'>动态绑定class</router-link>
+        </li>
       </ul>
     </nav>
     <div class="main">

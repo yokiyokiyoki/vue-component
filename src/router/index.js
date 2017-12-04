@@ -10,6 +10,7 @@ import ForTemplate from '@/components/for'
 import Bind from '@/components/bind'
 import Modifier from '@/components/modifier'
 import KeyCode from '@/components/keyCode'
+import ClassModule from '@/components/class'
 
 Vue.use(Router)
 
@@ -50,5 +51,9 @@ export default new Router({
     path: '/keyCode',
     name: 'KeyCode',
     component: KeyCode
+  }, {
+    path: '/class',
+    name: 'ClassModule',
+    component: ClassModule
   }]
 })
