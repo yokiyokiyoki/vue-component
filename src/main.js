@@ -6,6 +6,9 @@ import router from './router'
 import './assets/less/app.less'
 Vue.config.productionTip = false
 
+
+// 可以使用 `v-on:keyup.f1`
+Vue.config.keyCodes.f1 = 112
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
