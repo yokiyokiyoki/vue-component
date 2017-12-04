@@ -11,6 +11,9 @@
       <div :class="[active?redClass:greenClass,boldClass]">数组动态绑定类名</div>
       <!-- 但是如果有很多判断条件的时候，三元表达式就会太繁琐，可以使用数组里面对象的形式来写 -->
       <div :class="[{red:active},boldClass]">数组动态绑定类名</div>
+
+      <!-- 当在一个自定义组件上使用 class 属性时，可以直接使用class，它最终会定义到该组件的根元素     -->
+      <!-- <my-component class="greenClass"></my-component> -->
   </div>
 </template>
 <script>
