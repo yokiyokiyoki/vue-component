@@ -11,6 +11,7 @@ import Bind from '@/components/bind'
 import Modifier from '@/components/modifier'
 import KeyCode from '@/components/keyCode'
 import ClassModule from '@/components/class'
+import StyleModule from '@/components/style'
 
 Vue.use(Router)
 
@@ -55,5 +56,9 @@ export default new Router({
     path: '/class',
     name: 'ClassModule',
     component: ClassModule
+  }, {
+    path: '/style',
+    name: 'StyleModule',
+    component: StyleModule
   }]
 })

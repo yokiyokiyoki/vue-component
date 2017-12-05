@@ -32,6 +32,9 @@
         <li>
           <router-link to='/class'>动态绑定class</router-link>
         </li>
+        <li>
+          <router-link to='/style'>动态绑定style</router-link>
+        </li>
       </ul>
     </nav>
     <div class="main">
