@@ -13,6 +13,7 @@ import KeyCode from '@/components/keyCode'
 import ClassModule from '@/components/class'
 import StyleModule from '@/components/style'
 import Filter from '@/components/filter'
+import Form from '@/components/form'
 
 Vue.use(Router)
 
@@ -65,5 +66,9 @@ export default new Router({
     path: '/filter',
     name: 'Filter',
     component: Filter
+  }, {
+    path: '/form',
+    name: 'Form',
+    component: Form
   }]
 })
