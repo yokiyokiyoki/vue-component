@@ -35,6 +35,9 @@
         <li>
           <router-link to='/style'>动态绑定style</router-link>
         </li>
+        <li>
+          <router-link to='/filter'>过滤器</router-link>
+        </li>
       </ul>
     </nav>
     <div class="main">

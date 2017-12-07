@@ -12,6 +12,7 @@ import Modifier from '@/components/modifier'
 import KeyCode from '@/components/keyCode'
 import ClassModule from '@/components/class'
 import StyleModule from '@/components/style'
+import Filter from '@/components/filter'
 
 Vue.use(Router)
 
@@ -60,5 +61,9 @@ export default new Router({
     path: '/style',
     name: 'StyleModule',
     component: StyleModule
+  }, {
+    path: '/filter',
+    name: 'Filter',
+    component: Filter
   }]
 })
