@@ -41,6 +41,9 @@
         <li>
           <router-link to='/form'>form表单</router-link>
         </li>
+        <li>
+          <router-link to='/prop'>父子组件通信使用prop</router-link>
+        </li>
       </ul>
     </nav>
     <div class="main">
