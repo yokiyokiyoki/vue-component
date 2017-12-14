@@ -44,6 +44,12 @@
         <li>
           <router-link to='/prop'>父子组件通信使用prop</router-link>
         </li>
+        <li>
+          <router-link to='/customEvent'>父子组件通信自定义事件</router-link>
+        </li>
+        <li>
+          <router-link to='/eventBus'>事件总线</router-link>
+        </li>
       </ul>
     </nav>
     <div class="main">

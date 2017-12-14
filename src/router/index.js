@@ -15,6 +15,8 @@ import StyleModule from '@/components/style'
 import Filter from '@/components/filter'
 import Form from '@/components/form'
 import Prop from '@/components/prop'
+import CustomEvent from '@/components/customEvent'
+import EventBus from '@/components/eventBus'
 
 Vue.use(Router)
 
@@ -76,6 +78,14 @@ export default new Router({
       path: '/prop',
       name: 'Prop',
       component: Prop
+    }, {
+      path: '/customEvent',
+      name: 'CustomEvent',
+      component: CustomEvent
+    }, {
+      path: '/eventBus',
+      name: 'EventBus',
+      component: EventBus
     }
   ]
 })
