@@ -8,14 +8,15 @@
       <child v-bind:my-other='true'></child>
       <child v-bind:default-num='100'></child>
       <child v-bind:default-obj='{a:1}'></child>
+      <child v-bind:my-validator='10'></child>
   </div>
 </template>
 <script>
-    //引入子组件
-    import child from "./child.vue";
-    export default {
-      components: {
-        child //注册子组件
-      }
-    };
+  //引入子组件
+  import child from "./child.vue";
+  export default {
+    components: {
+      child //注册子组件
+    }
+  };
 </script>
