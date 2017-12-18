@@ -2,6 +2,8 @@
   <div class="customEvent"></div>
 </template>
 <script>
-    export default {};
+    export default {
+        
+    };
 </script>
 
