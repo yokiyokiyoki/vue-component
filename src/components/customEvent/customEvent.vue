@@ -1,9 +1,15 @@
 <template>
-  <div class="customEvent"></div>
+  <div class="customEvent">
+    <span>我是父组件</span>
+    <child ></child>
+  </div>
 </template>
 <script>
-    export default {
-        
-    };
+  import child from "./child.vue";
+  export default {
+    components: {
+      child
+    }
+  };
 </script>
 

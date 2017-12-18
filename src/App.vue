@@ -42,10 +42,10 @@
           <router-link to='/form'>form表单</router-link>
         </li>
         <li>
-          <router-link to='/prop'>父子组件通信使用prop</router-link>
+          <router-link to='/prop'>父向子组件通信使用prop</router-link>
         </li>
         <li>
-          <router-link to='/customEvent'>父子组件通信自定义事件</router-link>
+          <router-link to='/customEvent'>子向父组件通信自定义事件</router-link>
         </li>
         <li>
           <router-link to='/eventBus'>事件总线</router-link>
