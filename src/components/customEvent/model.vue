@@ -6,7 +6,8 @@
       <p>如果不监听input事件，把值再次赋值回去的话，充其量只算是单向绑定，即把data里的数据映射过来dom，但是dom不能反向改变data里的东西</p>
       <input type="text" v-bind:value="num" @input="inputListener($event)">
       <input type="text" v-model="num">
-      <p>实际上我们自定义一个输入框组件，想让别人可以使用v-model的话，必须符合这两个条件1.prop是value 2.显式地触发input事件</p>
+      <p>实际上我们自定义一个输入框组件，想让别人在f可以使用v-model的话，必须符合这两个条件1.prop是value 2.显式地触发input事件</p>
+      <input type="text" :value='value' @input="emitInput($event)">
   </div>
 </template>
 <script>
@@ -15,6 +16,10 @@
         inputListener(e) {
           this.num = e.target.value;
           console.log(this.num);
+        },
+        emitInput(e) {
+          // 显式地input事件
+          this.$emit("input", e.target.value);
         }
       },
       data() {
@@ -22,10 +27,10 @@
           num: 11
         };
       },
-      prop: {
+      props: {
         value: {
-          type: Number,
-          default: 1
+          type: String,
+          default: "1"
         }
       }
     };

@@ -7,7 +7,7 @@
     <sync-child v-bind:num.sync='num'></sync-child>
     <!-- 上面那个表达式会被编译为下面这样，可以把注释放开 -->
     <!-- <sync-child v-bind:num='num' v-on:update:num="val=>num=val"></sync-child> -->
-    <model></model>
+    <model v-model="modelNum"></model>
   </div>
 </template>
 <script>
@@ -32,8 +32,14 @@
     },
     data() {
       return {
-        num: 1
+        num: 1,
+        modelNum: 0
       };
+    },
+    watch: {
+      modelNum(val, oldVal) {
+        console.log("观察一下变化" + val);
+      }
     }
   };
 </script>
