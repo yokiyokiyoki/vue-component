@@ -33,7 +33,7 @@
     data() {
       return {
         num: 1,
-        modelNum: 0
+        modelNum: "0"
       };
     },
     watch: {
