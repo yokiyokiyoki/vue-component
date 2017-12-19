@@ -5,17 +5,20 @@
     <child @changeNum="changeNum" @click.native="clickNative($event)"></child>
     <!-- 父子组件双向传递，利用了语法糖，还是要在子组件内显示的触发emit -->
     <sync-child v-bind:num.sync='num'></sync-child>
-    <!-- 上面那个表达式会被编译为 -->
-    <sync-child v-bind:num='num' v-on:update:num="val=>num=val"></sync-child>
+    <!-- 上面那个表达式会被编译为下面这样，可以把注释放开 -->
+    <!-- <sync-child v-bind:num='num' v-on:update:num="val=>num=val"></sync-child> -->
+    <model></model>
   </div>
 </template>
 <script>
   import child from "./child.vue";
   import syncChild from "./sync.vue";
+  import model from "./model.vue";
   export default {
     components: {
       child,
-      syncChild
+      syncChild,
+      model
     },
     methods: {
       changeNum(num) {
