@@ -1,5 +1,5 @@
 <template>
-  <div class="model">
+  <div class="inputModel">
       <p>我是子组件3(自定义组件输入框)</p>
       <p>所谓v-model的双向绑定，就是data里num绑定到了input上面（显示出了11），而后我们在input上面输入了其他，也会反映到data里面</p>
       <p>所以v-model实际上是绑定value和监听input事件的语法糖</p>
