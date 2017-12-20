@@ -7,18 +7,18 @@
     <sync-child v-bind:num.sync='num'></sync-child>
     <!-- 上面那个表达式会被编译为下面这样，可以把注释放开 -->
     <!-- <sync-child v-bind:num='num' v-on:update:num="val=>num=val"></sync-child> -->
-    <model v-model="modelNum"></model>
+    <input-model v-model="modelNum" />
   </div>
 </template>
 <script>
   import child from "./child.vue";
   import syncChild from "./sync.vue";
-  import model from "./model.vue";
+  import inputModel from "./inputModel.vue";
   export default {
     components: {
       child,
       syncChild,
-      model
+      inputModel
     },
     methods: {
       changeNum(num) {
@@ -38,9 +38,8 @@
     },
     watch: {
       modelNum(val, oldVal) {
-        console.log("观察一下变化" + val);
+        console.log("观察一下自定义组件v-model变化" + val);
       }
     }
   };
 </script>
-
