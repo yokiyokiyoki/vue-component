@@ -8,20 +8,17 @@
     <!-- 上面那个表达式会被编译为下面这样，可以把注释放开 -->
     <!-- <sync-child v-bind:num='num' v-on:update:num="val=>num=val"></sync-child> -->
     <input-model v-model="modelNum" />
-    <radio-model />
   </div>
 </template>
 <script>
   import child from "./child.vue";
   import syncChild from "./sync.vue";
   import inputModel from "./inputModel.vue";
-  import radioModel from "./radioModel.vue";
   export default {
     components: {
       child,
       syncChild,
-      inputModel,
-      radioModel
+      inputModel
     },
     methods: {
       changeNum(num) {
