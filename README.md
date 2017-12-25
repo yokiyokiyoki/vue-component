@@ -1,4 +1,4 @@
-# vue-study
+# vue-basis-study
 
 > 关于vue的学习
 
