@@ -50,6 +50,9 @@
         <li>
           <router-link to='/eventBus'>事件总线</router-link>
         </li>
+        <li>
+          <router-link to='/slot'>slot插槽</router-link>
+        </li>
       </ul>
     </nav>
     <div class="main">

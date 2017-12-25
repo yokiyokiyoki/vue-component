@@ -17,6 +17,7 @@ import Form from '@/components/form'
 import Prop from '@/components/prop'
 import CustomEvent from '@/components/customEvent'
 import EventBus from '@/components/eventBus'
+import Slot from '@/components/slot'
 
 Vue.use(Router)
 
@@ -86,6 +87,10 @@ export default new Router({
       path: '/eventBus',
       name: 'EventBus',
       component: EventBus
+    }, {
+      path: '/slot',
+      name: 'Slot',
+      component: Slot
     }
   ]
 })
