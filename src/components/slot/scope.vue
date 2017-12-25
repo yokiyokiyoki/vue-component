@@ -5,7 +5,8 @@
       <p>我们在子组件给slot传递数据，就像给组件传递prop一样</p>
       <p>就当做是传递prop</p>
       <p>作用域插槽也可以有具名和匿名</p>
-      <slot text='我是给插槽传递数据的text属性' name='a'></slot>
+      <slot text='我是给插槽传递数据的text属性' name='a' ></slot>
+      <slot num='1' name='b'></slot>
       <slot :msg="msg"></slot>
   </div>
 </template>

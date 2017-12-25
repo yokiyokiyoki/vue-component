@@ -18,6 +18,8 @@
             </template>
             <!-- vue2.5之后亦可以不用template -->
             <p slot-scope="props" slot='a'>{{props.text}}</p>
+            <!-- slot-scope里面是合法的JavaScript表达式，可以用解构 -->
+            <p slot-scope="{num}" slot='b'>{{num}}</p>
         </scope> 
   </div>
 </template>
