@@ -18,6 +18,7 @@ import Prop from '@/components/prop'
 import CustomEvent from '@/components/customEvent'
 import EventBus from '@/components/eventBus'
 import Slot from '@/components/slot'
+import Dynamic from '@/components/dynamicComponent'
 
 Vue.use(Router)
 
@@ -91,6 +92,10 @@ export default new Router({
       path: '/slot',
       name: 'Slot',
       component: Slot
+    }, {
+      path: '/dynamic',
+      name: 'Dynamic',
+      component: Dynamic
     }
   ]
 })

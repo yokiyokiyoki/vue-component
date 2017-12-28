@@ -53,6 +53,9 @@
         <li>
           <router-link to='/slot'>slot插槽</router-link>
         </li>
+        <li>
+          <router-link to='/dynamic'>动态组件</router-link>
+        </li>
       </ul>
     </nav>
     <div class="main">
