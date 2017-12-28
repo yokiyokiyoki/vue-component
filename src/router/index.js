@@ -19,6 +19,7 @@ import CustomEvent from '@/components/customEvent'
 import EventBus from '@/components/eventBus'
 import Slot from '@/components/slot'
 import Dynamic from '@/components/dynamicComponent'
+import Transition from '@/components/transition'
 
 Vue.use(Router)
 
@@ -96,6 +97,10 @@ export default new Router({
       path: '/dynamic',
       name: 'Dynamic',
       component: Dynamic
+    }, {
+      path: "/transition",
+      name: 'Transition',
+      component: Transition
     }
   ]
 })

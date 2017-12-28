@@ -56,6 +56,9 @@
         <li>
           <router-link to='/dynamic'>动态组件</router-link>
         </li>
+        <li>
+          <router-link to='/transition'>状态过渡动画</router-link>
+        </li>
       </ul>
     </nav>
     <div class="main">
