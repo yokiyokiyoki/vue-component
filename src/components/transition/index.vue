@@ -56,6 +56,7 @@
     <transition name='bounce'>
       <p v-if="bounceShow">跳动动画</p>
     </transition>
+    <animation /> 
   </div>
 </template>
 <script>
