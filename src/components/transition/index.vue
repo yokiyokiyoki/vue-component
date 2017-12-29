@@ -59,6 +59,7 @@
   </div>
 </template>
 <script>
+  const animation = () => import("./animation.vue");
   export default {
     data() {
       return {
@@ -73,6 +74,9 @@
       bounce() {
         this.bounceShow = !this.bounceShow;
       }
+    },
+    components: {
+      animation
     }
   };
 </script>
