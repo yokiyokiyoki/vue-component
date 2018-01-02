@@ -56,7 +56,18 @@
     <transition name='bounce'>
       <p v-if="bounceShow">跳动动画</p>
     </transition>
-    <animation /> 
+    <animation />
+    <p>多个元素的过渡。相同元素切换的话应该设置key特性，让vue区分，否则vue为了效率只会替换标签内部的内容。相同元素设置key应该是最佳实践</p>
+    <p>相同元素如果transition里元素不加key做区分的话，那么只会替换元素内文字（这里是），然后就不会有过渡效果了。可以把key去掉试试</p>
+    <button @click="isEditing=!isEditing">切换多个相同元素过渡</button>
+    <transition name="fade">
+      <button v-if="isEditing" key="save">
+        Save
+      </button>
+      <button v-else key="edit">
+        Edit
+      </button>
+    </transition> 
   </div>
 </template>
 <script>
@@ -65,7 +76,8 @@
     data() {
       return {
         fadeShow: false,
-        bounceShow: false
+        bounceShow: false,
+        isEditing: false
       };
     },
     methods: {
