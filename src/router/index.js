@@ -20,6 +20,7 @@ import EventBus from '@/components/eventBus'
 import Slot from '@/components/slot'
 import Dynamic from '@/components/dynamicComponent'
 import Transition from '@/components/transition'
+import Mixins from '@/components/mixins'
 
 Vue.use(Router)
 
@@ -101,6 +102,10 @@ export default new Router({
       path: "/transition",
       name: 'Transition',
       component: Transition
+    }, {
+      path: '/mixins',
+      name: 'Mixins',
+      component: Mixins
     }
   ]
 })

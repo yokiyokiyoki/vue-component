@@ -59,6 +59,9 @@
         <li>
           <router-link to='/transition'>状态过渡动画</router-link>
         </li>
+        <li>
+          <router-link to='/mixins'>混合对象</router-link>
+        </li>
       </ul>
     </nav>
     <div class="main">
