@@ -96,7 +96,8 @@
       <button v-else key="edit">
         Edit
       </button>
-    </transition> 
+    </transition>
+    <p>多个组件的过渡或者路由切换过渡同理</p> 
   </div>
 </template>
 <script>
