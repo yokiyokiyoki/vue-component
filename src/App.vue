@@ -62,6 +62,9 @@
         <li>
           <router-link to='/mixins'>混合对象</router-link>
         </li>
+        <li>
+          <router-link to='/directive'>自定义指令</router-link>
+        </li>
       </ul>
     </nav>
     <div class="main">

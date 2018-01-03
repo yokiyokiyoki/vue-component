@@ -21,6 +21,7 @@ import Slot from '@/components/slot'
 import Dynamic from '@/components/dynamicComponent'
 import Transition from '@/components/transition'
 import Mixins from '@/components/mixins'
+import Directive from '@/components/directive'
 
 Vue.use(Router)
 
@@ -106,6 +107,10 @@ export default new Router({
       path: '/mixins',
       name: 'Mixins',
       component: Mixins
+    }, {
+      path: '/directive',
+      name: 'Directive',
+      component: Directive
     }
   ]
 })
