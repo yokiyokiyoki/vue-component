@@ -97,11 +97,13 @@
         Edit
       </button>
     </transition>
-    <p>多个组件的过渡或者路由切换过渡同理</p> 
+    <p>多个组件的过渡或者路由切换过渡同理</p>
+    <hook /> 
   </div>
 </template>
 <script>
   const animation = () => import("./animation.vue");
+  const hook = () => import("./hook.vue");
   export default {
     data() {
       return {
@@ -119,7 +121,8 @@
       }
     },
     components: {
-      animation
+      animation,
+      hook
     }
   };
 </script>
