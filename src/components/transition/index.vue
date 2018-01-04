@@ -99,11 +99,13 @@
     </transition>
     <p>多个组件的过渡或者路由切换过渡同理</p>
     <hook /> 
+    <list />
   </div>
 </template>
 <script>
   const animation = () => import("./animation.vue");
   const hook = () => import("./hook.vue");
+  const list = () => import("./list.vue");
   export default {
     data() {
       return {
@@ -122,7 +124,8 @@
     },
     components: {
       animation,
-      hook
+      hook,
+      list
     }
   };
 </script>
