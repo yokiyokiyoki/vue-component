@@ -3,10 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import plug from './components/plug/install'
 import './assets/less/app.less'
 Vue.config.productionTip = false
 
 import 'animate.css'
+
+Vue.use(plug)
 
 // 可以使用 `v-on:keyup.f1`
 Vue.config.keyCodes.f1 = 112

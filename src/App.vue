@@ -65,6 +65,9 @@
         <li>
           <router-link to='/directive'>自定义指令</router-link>
         </li>
+        <li>
+          <router-link to='/plug'>Vue的全局插件使用</router-link>
+        </li>
       </ul>
     </nav>
     <div class="main">

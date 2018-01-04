@@ -22,6 +22,7 @@ import Dynamic from '@/components/dynamicComponent'
 import Transition from '@/components/transition'
 import Mixins from '@/components/mixins'
 import Directive from '@/components/directive'
+import Plug from '@/components/plug'
 
 Vue.use(Router)
 
@@ -111,6 +112,10 @@ export default new Router({
       path: '/directive',
       name: 'Directive',
       component: Directive
+    }, {
+      path: '/plug',
+      name: 'Plug',
+      component: Plug
     }
   ]
 })
