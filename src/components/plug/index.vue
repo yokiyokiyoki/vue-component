@@ -8,13 +8,22 @@
           <li>全局混合对象mixins，添加一些组件选项</li>
           <li>添加vue实例方法，通过挂vue的原型上实现</li>
       </ul>
+      <p v-globalDirective='color'>11</p>
   </div>
 </template>
 <script>
     import Vue from "vue";
     export default {
+      data() {
+        return {
+          color: "yellow"
+        };
+      },
       created() {
         Vue.globalMethods();
+      },
+      mounted() {
+        this.$myMethods();
       }
     };
 </script>

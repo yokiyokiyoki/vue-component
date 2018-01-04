@@ -9,6 +9,7 @@ Vue.config.productionTip = false
 
 import 'animate.css'
 
+// 相当于是`MyPlugin.install(Vue)`
 Vue.use(plug)
 
 // 可以使用 `v-on:keyup.f1`
