@@ -23,6 +23,7 @@ import Transition from '@/components/transition'
 import Mixins from '@/components/mixins'
 import Directive from '@/components/directive'
 import Plug from '@/components/plug'
+import DataTransition from '@/components/data-Transition'
 
 Vue.use(Router)
 
@@ -104,6 +105,10 @@ export default new Router({
       path: "/transition",
       name: 'Transition',
       component: Transition
+    }, {
+      path: '/dataTransition',
+      name: 'DataTransition',
+      component: DataTransition
     }, {
       path: '/mixins',
       name: 'Mixins',
