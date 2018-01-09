@@ -23,6 +23,7 @@
               requestAnimationFrame(animate);
             }
           }
+          //这里和官网不一样
           let obj = { tweeningNumber: oldVal };
           new TWEEN.Tween(obj)
             .easing(TWEEN.Easing.Quadratic.Out)

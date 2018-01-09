@@ -4,13 +4,16 @@
       <p>数字的运算，颜色的变化，元素的大小和其他属性等等</p>
       <p>主要是使用呢tween.js动画库</p>
       <numComponent />
+      <colorComponent/>
   </div>
 </template>
 <script>
     const numComponent = () => import("./number.vue");
+    const colorComponent = () => import("./color.vue");
     export default {
       components: {
-        numComponent
+        numComponent,
+        colorComponent
       }
     };
 </script>
