@@ -1,4 +1,5 @@
 <style lang="less" scoped>
+  //控制下面li粒度的
   .list-item {
     display: inline-block;
     margin-right: 10px;
