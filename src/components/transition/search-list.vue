@@ -38,6 +38,7 @@
           el.style.height = 0;
         },
         enter(el, done) {
+          // 进来的每个元素都赋予1.6em高度
           Velocity(el, { opacity: 1, height: "1.6em" }, { complete: done });
         },
         leave(el, done) {
