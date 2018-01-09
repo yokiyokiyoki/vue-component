@@ -31,10 +31,12 @@
     </transition-group>
     <p>但这里有个问题，就是添加或者移除元素的时候，周围的元素会瞬间移动到他们的新布局的位置，而不是平滑过渡。</p>
     <move-list />
+    <search-list />
   </div>
 </template>
 <script>
   const moveList = () => import("./move-list.vue");
+  const searchList = () => import("./search-list.vue");
   export default {
     data() {
       return {
@@ -54,7 +56,8 @@
       }
     },
     components: {
-      moveList
+      moveList,
+      searchList
     }
   };
 </script>
